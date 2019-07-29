@@ -1,0 +1,43 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: ade189f70a2ca414295a942a8c92774d304ef8ab5e01da53941f9b597593d8fd
+
+name:           vector-text
+version:        1.0.9
+synopsis:       Text implementation based on unboxed char vector. It allows for high-performance indexing and slicing operations.
+category:       Data
+stability:      experimental
+homepage:       https://github.com/https://github.com/luna/vector-text#readme
+bug-reports:    https://github.com/https://github.com/luna/vector-text/issues
+author:         Wojciech Danilo
+maintainer:     Wojciech Danilo <wojciech.danilo@gmail.com>
+license:        Apache-2.0
+license-file:   LICENSE
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/https://github.com/luna/vector-text
+
+library
+  exposed-modules:
+      Data.Container.Vector
+      Data.Text32
+  other-modules:
+      Paths_vector_text
+  hs-source-dirs:
+      src
+  default-extensions: AllowAmbiguousTypes ApplicativeDo Arrows BangPatterns BinaryLiterals ConstraintKinds DataKinds DefaultSignatures DeriveDataTypeable DeriveFoldable DeriveFunctor DeriveGeneric DeriveTraversable DoAndIfThenElse DuplicateRecordFields EmptyDataDecls FlexibleContexts FlexibleInstances FunctionalDependencies GeneralizedNewtypeDeriving InstanceSigs LambdaCase MonadComprehensions MultiWayIf NamedWildCards NegativeLiterals NoImplicitPrelude NumDecimals OverloadedLabels PackageImports QuasiQuotes RankNTypes RecursiveDo ScopedTypeVariables StandaloneDeriving TemplateHaskell TupleSections TypeApplications TypeFamilies TypeFamilyDependencies TypeOperators ViewPatterns LiberalTypeSynonyms RelaxedPolyRec
+  ghc-options: -Wall -O2
+  build-depends:
+      base
+    , binary
+    , prologue
+    , text
+    , vector
+    , vector-binary-instances
+  default-language: Haskell2010
